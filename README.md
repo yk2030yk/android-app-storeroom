@@ -1,1 +1,3 @@
-# storeroom app
+#試作アプリケーション
+*DayPlan
+*MovieList

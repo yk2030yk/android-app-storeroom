@@ -1,3 +1,3 @@
 #試作アプリケーション
-*DayPlan
-*MovieList
+- DayPlan
+- MovieList

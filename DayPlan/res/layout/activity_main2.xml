@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e0e0e"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="予定追加" />
+
+    <com.example.dayplan.MyScrollView
+        android:id="@+id/myScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/linelayout"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="#e0e0e0"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/flayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b0b0b0" >
+            </FrameLayout>
+        </LinearLayout>
+    </com.example.dayplan.MyScrollView>
+
+</LinearLayout>

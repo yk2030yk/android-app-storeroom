@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/example/dayplan/MainActivity.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/example/dayplan/MainActivity.java" />
+    </issue>
+</lint>

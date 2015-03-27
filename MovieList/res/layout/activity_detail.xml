@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/d_color"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/backcolor"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <requestFocus />
+        </TextView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="#d3d3d3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/backcolor"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="5dp" >
+
+            <EditText
+                android:id="@+id/d_name"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_shape_main"
+                android:inputType="text"
+                android:padding="5dp"
+                android:text="0"
+                android:textSize="17sp"
+                android:typeface="normal" />
+
+            <Button
+                android:id="@+id/button_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape2"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="save"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="詳細"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/d_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background_shape_main"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="500dp"
+                    android:background="@color/backcolor" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/backcolor"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <Button
+            android:id="@+id/button_edit_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape2"
+            android:gravity="center"
+            android:text="save"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape2"
+            android:gravity="center"
+            android:text="back"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

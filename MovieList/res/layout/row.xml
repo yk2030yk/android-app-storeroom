@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/arealist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="10"
+        android:background="#f5f5f5"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/color"
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="Button"
+            android:textSize="15sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape3"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+    </LinearLayout>
+
+</LinearLayout>
